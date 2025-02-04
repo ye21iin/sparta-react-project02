@@ -1,11 +1,8 @@
 import { useState } from "react";
+import Router from "./shared/Router";
 
 function App() {
-  return (
-    <>
-      <h1>App</h1>
-    </>
-  );
+  return <Router />;
 }
 
 export default App;
