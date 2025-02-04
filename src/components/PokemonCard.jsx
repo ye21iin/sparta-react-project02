@@ -45,7 +45,7 @@ const Btn = styled.button`
 const PokemonCard = (props) => {
   const { IMG_SRC, name, id } = props;
   return (
-    <CardContainer>
+    <CardContainer isSelected={0}>
       <Img src={IMG_SRC} alt="Pokemon"></Img>
       <NameTag>
         <h4>{name}</h4>

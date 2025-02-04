@@ -5,14 +5,17 @@ import PokemonList from "../components/PokemonList";
 
 const Dex = () => {
   const [pokemons, setPokemons] = useState([]);
+  const [selected, setSelected] = useState([
+    { id: "test", korean_name: "test" },
+  ]);
 
   useEffect(() => {
     setPokemons(MOCK_DATA);
   });
-  console.log(pokemons);
+
   return (
     <>
-      <Dashboard></Dashboard>
+      <Dashboard selected={selected}></Dashboard>
       <PokemonList pokemons={pokemons}></PokemonList>
     </>
   );
