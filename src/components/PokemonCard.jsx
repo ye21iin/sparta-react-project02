@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const CardContainer = styled.div`
-  border: 1px solid rgb(221, 221, 221);
   background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(221, 221, 221);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
