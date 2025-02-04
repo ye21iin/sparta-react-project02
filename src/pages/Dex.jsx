@@ -17,12 +17,20 @@ const Dex = () => {
       return;
     }
     if (!selected.includes(id)) {
-      setSelected([...selected, id]);
+      const selectedPokemon = pokemons.find((mon) => mon.id === id);
+      const newPokemons = pokemons.filter((mon) => {
+        return mon.id !== id;
+      });
+      setSelected([...selected, selectedPokemon]);
+      setPokemons(newPokemons.sort((a, b) => a.id - b.id));
     }
   };
 
   const handleDelete = (id) => {
-    setSelected(selected.filter((selectedId) => selectedId !== id));
+    const deselectedPokemon = selected.find((mon) => mon.id === id);
+    const newSelected = selected.filter((mon) => mon.id !== id);
+    setSelected(newSelected);
+    setPokemons([...pokemons, deselectedPokemon].sort((a, b) => a.id - b.id));
   };
 
   return (
