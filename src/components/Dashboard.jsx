@@ -36,16 +36,20 @@ const Card = styled.div`
   border-radius: 5px;
 `;
 
-const Dashboard = ({ selected }) => {
+const Dashboard = ({ pokemons, selected, handleDelete }) => {
   return (
     <DashContainer>
       <h2>나만의 포켓몬</h2>
       <CardContainer>
-        {selected.map((mon) => {
+        {selected.map((id) => {
+          const mon = pokemons.find((mon) => mon.id === id);
+          if (!mon) return null;
           const props = {
             IMG_SRC: mon.img_url,
             name: mon.korean_name,
             id: mon.id,
+            isSelected: true,
+            handleDelete: () => handleDelete(mon.id),
           };
           return <PokemonCard key={mon.id} {...props}></PokemonCard>;
         })}

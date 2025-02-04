@@ -43,15 +43,19 @@ const Btn = styled.button`
 `;
 
 const PokemonCard = (props) => {
-  const { IMG_SRC, name, id } = props;
+  const { IMG_SRC, name, id, isSelected, handleAdd, handleDelete } = props;
   return (
-    <CardContainer isSelected={0}>
+    <CardContainer>
       <Img src={IMG_SRC} alt="Pokemon"></Img>
       <NameTag>
         <h4>{name}</h4>
         <p>No. {id}</p>
       </NameTag>
-      <Btn>추가</Btn>
+      {!isSelected ? (
+        <Btn onClick={handleAdd}>추가</Btn>
+      ) : (
+        <Btn onClick={handleDelete}>삭제</Btn>
+      )}
     </CardContainer>
   );
 };
