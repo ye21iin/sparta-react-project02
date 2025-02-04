@@ -41,9 +41,7 @@ const Dashboard = ({ pokemons, selected, handleDelete }) => {
     <DashContainer>
       <h2>나만의 포켓몬</h2>
       <CardContainer>
-        {selected.map((id) => {
-          const mon = pokemons.find((mon) => mon.id === id);
-          if (!mon) return null;
+        {selected.map((mon) => {
           const props = {
             IMG_SRC: mon.img_url,
             name: mon.korean_name,
