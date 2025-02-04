@@ -11,7 +11,7 @@ const ListContainer = styled.div`
   gap: 20px;
 `;
 
-const PokemonList = ({ pokemons }) => {
+const PokemonList = ({ pokemons, handleAdd }) => {
   return (
     <ListContainer>
       {pokemons.map((mon) => {
@@ -19,6 +19,8 @@ const PokemonList = ({ pokemons }) => {
           IMG_SRC: mon.img_url,
           name: mon.korean_name,
           id: mon.id,
+          isSelected: false,
+          handleAdd: () => handleAdd(mon.id),
         };
         return <PokemonCard key={mon.id} {...props}></PokemonCard>;
       })}
