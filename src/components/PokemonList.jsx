@@ -1,7 +1,12 @@
 import React from "react";
+import PokemonCard from "./PokemonCard";
 
 const PokemonList = () => {
-  return <div>PokemonList</div>;
+  return (
+    <>
+      <PokemonCard></PokemonCard>
+    </>
+  );
 };
 
 export default PokemonList;
