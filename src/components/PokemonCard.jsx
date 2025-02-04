@@ -27,7 +27,7 @@ const NameTag = styled.div`
 
 const Btn = styled.button`
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
 
   border: 3px solid red;
@@ -42,14 +42,14 @@ const Btn = styled.button`
   }
 `;
 
-const PokemonCard = () => {
-  const IMG_SRC = "나중에 입력하기";
+const PokemonCard = (props) => {
+  const { IMG_SRC, name, id } = props;
   return (
     <CardContainer>
-      <Img src={IMG_SRC} alt="pokemon"></Img>
+      <Img src={IMG_SRC} alt="Pokemon"></Img>
       <NameTag>
-        <h4>포켓몬 이름</h4>
-        <p>포켓몬 번호</p>
+        <h4>{name}</h4>
+        <p>No. {id}</p>
       </NameTag>
       <Btn>추가</Btn>
     </CardContainer>
