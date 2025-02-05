@@ -7,7 +7,7 @@ const PokemonCard = (props) => {
   const navigate = useNavigate();
 
   const handleOnClick = () => {
-    navigate(`/detail/${id}`);
+    navigate(`/detail?id=${id}`);
   };
 
   return (
