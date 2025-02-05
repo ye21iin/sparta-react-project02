@@ -1,15 +1,6 @@
 import React from "react";
 import PokemonCard from "./PokemonCard";
-import styled from "styled-components";
-
-const ListContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-`;
+import { ListContainer } from "../style";
 
 const PokemonList = ({ pokemons, handleAdd }) => {
   return (
