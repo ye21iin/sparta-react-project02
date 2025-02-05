@@ -1,11 +1,11 @@
 import React from "react";
 import PokemonCard from "./PokemonCard";
-import { DashContainer, CardContainer } from "../style.jsx";
+import { DashContainer, CardContainer, Title } from "../style.jsx";
 
 const Dashboard = ({ pokemons, selected, handleDelete }) => {
   return (
     <DashContainer>
-      <h2>나만의 포켓몬</h2>
+      <Title>나만의 포켓몬</Title>
       <CardContainer>
         {selected.map((mon) => {
           const props = {

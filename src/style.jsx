@@ -6,14 +6,21 @@ export const DashContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   padding: 20px;
   margin: 20px;
+
   border: 1px solid rgb(221, 221, 221);
   border-radius: 10px;
   overflow: hidden;
+
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
   transition: transform 0.2s, box-shadow 0.2s;
+`;
+
+export const Title = styled.h2`
+  margin: 20px auto 0px;
 `;
 
 export const CardContainer = styled.div`
