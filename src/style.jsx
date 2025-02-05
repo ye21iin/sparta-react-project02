@@ -83,3 +83,15 @@ export const Btn = styled.button`
     color: #e0e0e0;
   }
 `;
+
+export const DetailContainer = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+`;

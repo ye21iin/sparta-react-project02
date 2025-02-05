@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import MOCK_DATA from "../data/mockData";
 import Dashboard from "../components/Dashboard";
 import PokemonList from "../components/PokemonList";
+import { Outlet } from "react-router-dom";
 
 const Dex = () => {
   const [pokemons, setPokemons] = useState([]);
