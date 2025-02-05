@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import PokemonCard from "./PokemonCard";
 import { DashContainer, CardContainer, Title } from "../style.jsx";
+import { PokemonContext } from "../context/PokemonContext.jsx";
 
-const Dashboard = ({ pokemons, selected, handleDelete }) => {
+const Dashboard = () => {
+  const { selected, handleDelete } = useContext(PokemonContext);
   return (
     <DashContainer>
       <Title>나만의 포켓몬</Title>

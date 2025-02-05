@@ -1,8 +1,12 @@
-import { useState } from "react";
 import Router from "./shared/Router";
+import { PokemonProvider } from "./context/PokemonProvider";
 
 function App() {
-  return <Router />;
+  return (
+    <PokemonProvider>
+      <Router />
+    </PokemonProvider>
+  );
 }
 
 export default App;
