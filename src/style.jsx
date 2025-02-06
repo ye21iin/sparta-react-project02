@@ -102,3 +102,37 @@ export const DetailContainer = styled.div`
   align-items: center;
   text-align: center;
 `;
+
+export const HomeContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
+export const LogoImg = styled.img`
+  width: 600px;
+  margin-bottom: 30px;
+`;
+
+export const HomeBtn = styled.button`
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 400;
+
+  border: 3px solid red;
+  border-radius: 5px;
+  background-color: red;
+  color: #f4f4f4;
+
+  &:hover {
+    background-color: darkred;
+    border-color: darkred;
+    color: #e0e0e0;
+  }
+`;
