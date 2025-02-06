@@ -1,24 +1,21 @@
-import React, { useContext } from "react";
 import PokemonCard from "./PokemonCard";
 import { DashContainer, CardContainer, Title } from "../style.jsx";
-import { PokemonContext } from "../context/PokemonContext.jsx";
+import { useSelector } from "react-redux";
 
 const Dashboard = () => {
-  const { selected, handleDelete } = useContext(PokemonContext);
+  const selected = useSelector((state) => state.pokemon.selected);
+
   return (
     <DashContainer>
       <Title>나만의 포켓몬</Title>
       <CardContainer>
-        {selected.map((mon) => {
-          const props = {
-            IMG_SRC: mon.img_url,
-            name: mon.korean_name,
-            id: mon.id,
-            isSelected: true,
-            handleDelete: () => handleDelete(mon.id),
-          };
-          return <PokemonCard key={mon.id} {...props}></PokemonCard>;
-        })}
+        {selected.length === 0 ? (
+          <p> 🎁 마음에 드는 포켓몬을 잡아보세요! 🎁 </p>
+        ) : (
+          selected.map((mon) => {
+            return <PokemonCard key={mon.id} {...mon}></PokemonCard>;
+          })
+        )}
       </CardContainer>
     </DashContainer>
   );

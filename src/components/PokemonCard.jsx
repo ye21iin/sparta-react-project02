@@ -1,10 +1,12 @@
-import React from "react";
+import { useDispatch } from "react-redux";
 import { CardListContainer, Img, NameTag, Btn } from "../style";
 import { useNavigate } from "react-router-dom";
+import { handleAdd, handleDelete } from "../redux/slice";
 
 const PokemonCard = (props) => {
-  const { IMG_SRC, name, id, isSelected, handleAdd, handleDelete } = props;
+  const { img_url: IMG_SRC, korean_name: name, id, isSelected } = props;
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const handleOnClick = () => {
     navigate(`/detail?id=${id}`);
@@ -21,7 +23,7 @@ const PokemonCard = (props) => {
         <Btn
           onClick={(e) => {
             e.stopPropagation();
-            handleAdd();
+            dispatch(handleAdd(id));
           }}
         >
           추가
@@ -30,7 +32,7 @@ const PokemonCard = (props) => {
         <Btn
           onClick={(e) => {
             e.stopPropagation();
-            handleDelete();
+            dispatch(handleDelete(id));
           }}
         >
           삭제

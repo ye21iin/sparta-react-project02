@@ -1,4 +1,4 @@
-import { createContext } from "react";
+// import { createContext } from "react";
 
-// create
-export const PokemonContext = createContext();
+// // create
+// export const PokemonContext = createContext();
