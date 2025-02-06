@@ -1,15 +1,18 @@
-import React, { useContext, useEffect } from "react";
+import React, { useEffect } from "react";
 import MOCK_DATA from "../data/mockData";
 import Dashboard from "../components/Dashboard";
 import PokemonList from "../components/PokemonList";
-import { PokemonContext } from "../context/PokemonContext";
+import { useDispatch, useSelector } from "react-redux";
+import { setPokemons } from "../redux/slice";
 
 const Dex = () => {
-  const { setPokemons } = useContext(PokemonContext);
-
+  const dispatch = useDispatch();
+  const pokemons = useSelector((state) => state.pokemon.pokemons);
   useEffect(() => {
-    setPokemons(MOCK_DATA);
-  }, [setPokemons]);
+    if (pokemons.length === 0) {
+      dispatch(setPokemons(MOCK_DATA));
+    }
+  }, [dispatch, pokemons.length]);
 
   return (
     <>

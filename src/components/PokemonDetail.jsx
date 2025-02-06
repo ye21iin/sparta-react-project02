@@ -1,4 +1,3 @@
-import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { DetailContainer, Img, NameTag, Btn } from "../style";
 import MOCK_DATA from "../data/mockData";
