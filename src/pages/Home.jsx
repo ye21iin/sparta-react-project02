@@ -38,7 +38,7 @@ const Btn = styled.button`
 const Home = () => {
   return (
     <HomeContainer>
-      <Img src="/public/pokemon-logo.png" alt="Logo" />
+      <Img src="/pokemon-logo.png" alt="Logo" />
       <Btn type="button" onClick={() => (location.href = "/dex")}>
         포켓몬 도감 시작하기
       </Btn>
