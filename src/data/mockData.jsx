@@ -1229,5 +1229,14 @@ const MOCK_DATA = [
     description:
       "에스퍼 타입의 전설의 포켓몬으로, 희귀하고 신비로운 능력을 가집니다.",
   },
+  {
+    img_url:
+      "https://mblogthumb-phinf.pstatic.net/MjAxOTAxMTNfMTMg/MDAxNTQ3MzYyNTEyODI0.4iQusR8v53bT9H1qX47kuInvP0dvqqLFUAQPaCKcm7Ag.Zw63mBA7Cnra3J-cx5t5X-lrCAjvOYzjH1xe5mWkvJAg.JPEG.vov7795/796400b4f506d128b65dd4f6a86970a678eba405c1dadb3a55b0e99ef56033332514333b8cc43cf742b4ede40475ff22e2654e629a365b8914d2b885ab18bfad9e6a4d3fa8a712c4aa29515c76b40fcd3ee0961d290a23a92eb56e19e23adda8.jpg?type=w800",
+    korean_name: "리아코",
+    types: ["물"],
+    id: 152,
+    description:
+      "포켓몬스터 골드버전 씹사기 스타팅 포켓몬이다. 얘로 클리어 못한다면 손발이 없다고 해도 무방하다. 메카닉이 좋아한다.",
+  },
 ];
 export default MOCK_DATA;
