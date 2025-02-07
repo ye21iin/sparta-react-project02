@@ -137,9 +137,18 @@ export const HomeBtn = styled.button`
   color: #f4f4f4;
 
   &:hover {
-    background-color: darkred;
+    background-color: #6b6666;
     border-color: darkred;
     color: #e0e0e0;
+  }
+  @media (max-width: 768px) {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 8px 16px;
+    font-size: 14px;
   }
 `;
 
@@ -169,8 +178,15 @@ export const Img = styled.img`
 `;
 
 export const LogoImg = styled.img`
-  width: 600px;
+  width: 100%;
   margin-bottom: 30px;
+
+  @media (max-width: 768px) {
+    width: 120%;
+  }
+  @media (max-width: 480px) {
+    width: 140%;
+  }
 `;
 
 export const NameTag = styled.div`
