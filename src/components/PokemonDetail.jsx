@@ -1,5 +1,12 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import { DetailContainer, Img, NameTag, Btn } from "../style";
+import {
+  DetailContainer,
+  Img,
+  NameTag,
+  Btn,
+  BackBtn,
+  BtnContainer,
+} from "../style";
 import MOCK_DATA from "../data/mockData";
 
 const PokemonDetail = () => {
@@ -19,7 +26,10 @@ const PokemonDetail = () => {
         <p>{types.join(" / ")}</p>
         <p>{description}</p>
       </NameTag>
-      <Btn onClick={() => navigate(-1)}>뒤로 가기</Btn>
+      <BtnContainer>
+        <Btn>추가</Btn>
+        <BackBtn onClick={() => navigate(-1)}>뒤로 가기</BackBtn>
+      </BtnContainer>
     </DetailContainer>
   );
 };
