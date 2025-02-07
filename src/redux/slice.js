@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { toast } from "react-toastify";
 
 const initialState = {
   pokemons: [],
@@ -23,7 +24,7 @@ const pokemonSlice = createSlice({
       const { pokemons, selected } = state;
       // 실행 순간 selected 개체 수가 6개 이상이면 early-return
       if (selected.length >= 6) {
-        alert("포켓몬 수는 6마리를 초과할 수 없습니다.");
+        toast.warning("포켓몬 수는 6마리를 초과할 수 없습니다.");
         return;
       }
       // 이미 선택된 포켓몬이 아니면 추가하기
