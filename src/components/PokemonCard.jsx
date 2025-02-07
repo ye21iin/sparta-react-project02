@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { CardListContainer, Img, NameTag, Btn } from "../style";
+import { PokemonCardContainer, Img, NameTag, Btn } from "../style";
 import { useNavigate } from "react-router-dom";
 import { handleAdd, handleDelete } from "../redux/slice";
 
@@ -13,7 +13,7 @@ const PokemonCard = (props) => {
   };
 
   return (
-    <CardListContainer onClick={handleOnClick}>
+    <PokemonCardContainer onClick={handleOnClick}>
       <Img src={IMG_SRC} alt="Pokemon"></Img>
       <NameTag>
         <h4>{name}</h4>
@@ -38,7 +38,7 @@ const PokemonCard = (props) => {
           삭제
         </Btn>
       )}
-    </CardListContainer>
+    </PokemonCardContainer>
   );
 };
 

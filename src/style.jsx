@@ -35,6 +35,23 @@ export const CardContainer = styled.div`
   gap: 30px;
 `;
 
+export const PokeBall = styled.div`
+  width: 110px;
+  height: 200px;
+  background-color: white;
+  border: 2px dashed rgb(204, 204, 204);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px auto;
+`;
+
+export const PokeBallImg = styled.img`
+  width: 60px;
+  height: 60px;
+`;
+
 export const Card = styled.div`
   width: 100px;
   height: 100px;
@@ -55,7 +72,7 @@ export const ListContainer = styled.div`
   gap: 20px;
 `;
 
-export const CardListContainer = styled.div`
+export const PokemonCardContainer = styled.div`
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(221, 221, 221);
   border-radius: 10px;
@@ -65,6 +82,7 @@ export const CardListContainer = styled.div`
   padding: 10px;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
+  height: 200px;
 `;
 
 export const Img = styled.img`
@@ -74,14 +92,18 @@ export const Img = styled.img`
 
 export const NameTag = styled.div`
   h4 {
+    margin: 0px auto 3px;
   }
   p {
+    color: #444444;
+    font-size: 14px;
+    margin-top: 2px;
   }
 `;
 
 export const Btn = styled.button`
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 7px 14px;
+  font-size: 14px;
   font-weight: 400;
 
   border: 3px solid red;
@@ -97,8 +119,8 @@ export const Btn = styled.button`
 `;
 
 export const BackBtn = styled.button`
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 7px 14px;
+  font-size: 14px;
   font-weight: 400;
 
   border: 3px solid #808080;
