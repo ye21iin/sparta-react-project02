@@ -9,9 +9,17 @@ import { toast } from "react-toastify";
 const Dex = () => {
   const dispatch = useDispatch();
   const pokemons = useSelector((state) => state.pokemon.pokemons);
+
   useEffect(() => {
-    toast(`🎁 나만의 포켓몬 세계를 완성해보세요!`);
-    toast.info(`각 포켓몬을 클릭하면 상세 정보를 확인할 수 있습니다.`);
+    const hasSeenWelcome = sessionStorage.getItem("hasSeenWelcome");
+    console.log(hasSeenWelcome);
+    if (!hasSeenWelcome) {
+      toast(`🎁 나만의 포켓몬 세계를 완성해보세요!`);
+      toast.info(`각 포켓몬을 클릭하면 상세 정보를 확인할 수 있습니다.`);
+      setTimeout(() => {
+        sessionStorage.setItem("hasSeenWelcome", "true");
+      }, 1000);
+    }
   }, []);
 
   useEffect(() => {
