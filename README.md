@@ -1,6 +1,7 @@
 # ⚡️ PokemonDex : 나만의 포켓몬 도감 만들기
 
-PokemonDex는 포켓몬 데이터를 조회하고 나만의 포켓몬을 수집할 수 있는 **SPA(Single Page Application)**입니다.
+**PokemonDex**는
+포켓몬 데이터를 조회하고 나만의 포켓몬을 수집할 수 있는 **SPA**(Single Page Application)입니다.
 
 사용자가 포켓몬을 선택하여 대시보드에 추가하거나, 상세 정보를 확인할 수 있습니다.
 **React**와 **Redux**를 활용하여 상태 관리와 라우팅을 구현한 개인 프로젝트입니다.
@@ -58,9 +59,9 @@ react-pokemon-dex
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![Redux](https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white)
-![react-router-dom](https://img.shields.io/badge/react--router--dom-CA4245?style=flat-square&logo=react-router&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![StyledComponents](https://img.shields.io/badge/styledcomponents-DB7093?style=flat-square&logo=styledcomponents&logoColor=white)
+![react-router-dom](https://img.shields.io/badge/react--router--dom-CA4245?style=flat-square&logo=react-router&logoColor=white)
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 
 ## 🎱 개발 프로세스
@@ -84,9 +85,9 @@ react-pokemon-dex
 
 ## 🌧️ TROUBLE-SHOOTING
 
-| ![이미지1](https://velog.velcdn.com/images/ye21iin/post/e513101d-e6d6-4521-9d3a-d71b4df5f2a9/image.png)                                     | ![이미지2](https://velog.velcdn.com/images/ye21iin/post/bca98a15-52fa-4919-94a0-cc5fadab220f/image.png)      | ![이미지3](https://velog.velcdn.com/images/ye21iin/post/e752bc51-eebf-46dc-9270-781374d7c38f/image.png)              | ![이미지4](https://velog.velcdn.com/images/ye21iin/post/419f7bfd-de0a-4606-b8ff-22a8977e20b9/image.png)                                                                                                       |
-| ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [링크1](https://velog.io/@ye21iin/%EC%97%90%EB%9F%AC%EB%A9%94%EC%84%B8%EC%A7%80%EB%A5%BC-%EC%B2%98%EB%A6%AC%ED%95%98%EC%9E%90-UnKnown-word) | [링크2](https://velog.io/@ye21iin/%EC%97%90%EB%9F%AC%EB%A9%94%EC%84%B8%EC%A7%80-missing-in-props-validation) | [링크3](https://velog.io/@ye21iin/%EC%97%90%EB%9F%AC%EB%A9%94%EC%84%B8%EC%A7%80-React-hook-has-a-missing-dependency) | [링크4](https://velog.io/@ye21iin/Vercel-%EB%B0%B0%ED%8F%AC-%ED%9B%84-404-%EC%97%90%EB%9F%AC%EC%99%80-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%91%EB%B0%95-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0) |
+| <img src="https://velog.velcdn.com/images/ye21iin/post/e513101d-e6d6-4521-9d3a-d71b4df5f2a9/image.png" width="200">                                                        | <img src="https://velog.velcdn.com/images/ye21iin/post/bca98a15-52fa-4919-94a0-cc5fadab220f/image.png" width="200">                             | <img src="https://velog.velcdn.com/images/ye21iin/post/e752bc51-eebf-46dc-9270-781374d7c38f/image.png" width="200">                                             | <img src="https://velog.velcdn.com/images/ye21iin/post/419f7bfd-de0a-4606-b8ff-22a8977e20b9/image.png" width="200">                                                                                                                                                 |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [에러메세지를 처리하자 - UnKnown word](https://velog.io/@ye21iin/%EC%97%90%EB%9F%AC%EB%A9%94%EC%84%B8%EC%A7%80%EB%A5%BC-%EC%B2%98%EB%A6%AC%ED%95%98%EC%9E%90-UnKnown-word) | [에러메세지 - missing in props validation](https://velog.io/@ye21iin/%EC%97%90%EB%9F%AC%EB%A9%94%EC%84%B8%EC%A7%80-missing-in-props-validation) | [에러메세지 - React hook has a missing dependency](https://velog.io/@ye21iin/%EC%97%90%EB%9F%AC%EB%A9%94%EC%84%B8%EC%A7%80-React-hook-has-a-missing-dependency) | [[React] Vercel 배포 후 404 에러와 이미지 엑박 문제 해결하기](https://velog.io/@ye21iin/Vercel-%EB%B0%B0%ED%8F%AC-%ED%9B%84-404-%EC%97%90%EB%9F%AC%EC%99%80-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%91%EB%B0%95-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0) |
 
 ## 🌠 미리 보기
 
